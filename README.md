@@ -7,7 +7,8 @@
 
 **Autor:** Diogo Rego - Estudante de Estatística UFPB  
 **Tema:** análise estatística aplicada ao futebol, seleção de jogadores e incerteza de desempenho.  
-**Aplicação principal:** dashboard interativo em **R/Shiny** com simulação de **Monte Carlo** para estimar probabilidades relativas de escolha de jogadores em um elenco hipotético para a **Copa do Mundo 2026**.
+**Aplicação principal:** dashboard interativo em **R/Shiny** com simulação de **Monte Carlo** para estimar probabilidades relativas de escolha de jogadores em um elenco hipotético para a **Copa do Mundo 2026**.  
+**Versão complementar:** arquivo **HTML responsivo** (`dashboard_monte_carlo.html`) com dados incorporados, filtros, pesos configuráveis, gráficos e simulação executada diretamente no navegador, funcionando em computadores, tablets e celulares.
 
 > Este projeto foi desenvolvido como uma aplicação estatística autoral, com foco em reprodutibilidade, clareza metodológica, controle de qualidade de código e apresentação profissional dos resultados. O modelo não representa decisão oficial de seleção, convocação real ou previsão determinística; ele oferece uma leitura quantitativa, transparente e ajustável a partir das estatísticas disponíveis.
 
@@ -51,6 +52,7 @@ A organização do repositório segue um padrão profissional para projetos esta
 | Caminho | Finalidade |
 |---|---|
 | `app.R` | Aplicação Shiny principal com interface, filtros, gráficos, tabelas e download dos resultados. |
+| `dashboard_monte_carlo.html` | Versão HTML responsiva e portátil, com dados incorporados e simulação Monte Carlo em JavaScript para uso em computadores e celulares. |
 | `R/monte_carlo.R` | Funções estatísticas reutilizáveis para validação, índice ajustado e simulação Monte Carlo. |
 | `scripts/prepare_data.R` | Script em R para preparar a base tratada a partir do CSV bruto. |
 | `scripts/prepare_data.py` | Script auxiliar em Python usado para gerar rapidamente a base processada no ambiente de desenvolvimento. |
@@ -62,13 +64,22 @@ A organização do repositório segue um padrão profissional para projetos esta
 | `data/processed/` | Base limpa, metadados e ranking auxiliar. |
 | `docs/dicionario_dados.md` | Dicionário de dados e descrição das variáveis. |
 | `docs/validacao_visual.md` | Registro da validação visual da prévia gráfica. |
+| `docs/validacao_html_responsivo.md` | Registro da validação visual e técnica do HTML responsivo em desktop e mobile. |
 | `img/dashboard_preview.png` | Prévia visual do ranking estatístico balanceado por posição. |
+| `img/html_desktop_preview.png` | Captura de validação do HTML em tela de computador. |
+| `img/html_mobile_preview.png` | Captura de validação do HTML em tela de celular. |
 | `www/style.css` | Estilo visual customizado do dashboard. |
 | `install_packages.R` | Instala as dependências necessárias do projeto. |
 
 ## Como executar
 
-Para executar o projeto localmente, é necessário ter o **R** instalado e acesso à internet para instalação dos pacotes. O dashboard foi organizado para funcionar como aplicação Shiny padrão, com `app.R` na raiz do repositório.
+### Opção 1 — HTML responsivo
+
+Para uma apresentação rápida em computadores, tablets ou celulares, abra o arquivo `dashboard_monte_carlo.html` diretamente no navegador. Essa versão incorpora a base processada e executa a simulação Monte Carlo em JavaScript, sem exigir instalação do R para demonstração dos resultados.
+
+### Opção 2 — Dashboard R/Shiny
+
+Para executar o projeto localmente em sua versão estatística principal, é necessário ter o **R** instalado e acesso à internet para instalação dos pacotes. O dashboard foi organizado para funcionar como aplicação Shiny padrão, com `app.R` na raiz do repositório.
 
 ```r
 source("install_packages.R")
@@ -100,6 +111,7 @@ A aplicação Shiny foi desenhada para permitir exploração estatística com al
 | Composição do elenco | Define vagas para goleiros, defensores, meio-campistas e atacantes. |
 | Pesos do índice | Ajusta a importância relativa de ataque, criação, defesa e goleiro. |
 | Exportação | Permite baixar o resultado completo da simulação em CSV. |
+| HTML responsivo | Disponibiliza as funcionalidades centrais em um único arquivo portátil, adaptado a computadores e celulares. |
 
 ## Interpretação dos resultados
 
