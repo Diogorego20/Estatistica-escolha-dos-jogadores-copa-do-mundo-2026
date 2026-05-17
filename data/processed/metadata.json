@@ -1,0 +1,16 @@
+{
+  "dataset_title": "Football Players Stats (2025-2026)",
+  "dataset_url": "https://www.kaggle.com/datasets/hubertsidorowicz/football-players-stats-2025-2026",
+  "creator": "Hubert Sidorowicz",
+  "platform": "Kaggle",
+  "original_source": "FBref",
+  "season": "2025-2026",
+  "version": 34,
+  "license": "MIT",
+  "author_of_project": "Diogo Rego - Estudante de Estatística UFPB",
+  "rows": 2779,
+  "countries": 114,
+  "clubs": 96,
+  "leagues": 5,
+  "processed_file": "data/processed/players_world_cup_monte_carlo_ready.csv"
+}

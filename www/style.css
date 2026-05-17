@@ -1,0 +1,105 @@
+:root {
+  --azul-profundo: #0B1F3A;
+  --dourado: #D6A84F;
+  --verde: #1B998B;
+  --vermelho: #E84855;
+  --cinza-texto: #3F4652;
+  --fundo-suave: #F5F7FA;
+}
+
+body {
+  background: linear-gradient(135deg, #F7F9FC 0%, #EEF2F7 100%);
+  color: var(--cinza-texto);
+}
+
+.app-title {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.app-subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.navbar, .bslib-page-title {
+  background: linear-gradient(90deg, var(--azul-profundo), #123C69) !important;
+}
+
+.card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(11, 31, 58, 0.08);
+}
+
+.card-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+  color: var(--azul-profundo);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.bslib-sidebar-layout > .sidebar {
+  background: #FFFFFF;
+  border-right: 1px solid rgba(11, 31, 58, 0.08);
+  box-shadow: 8px 0 30px rgba(11, 31, 58, 0.04);
+}
+
+.btn-download, .btn-download:hover, .btn-download:focus {
+  width: 100%;
+  background: linear-gradient(90deg, var(--azul-profundo), #123C69);
+  border: none;
+  color: #FFFFFF;
+  font-weight: 800;
+  border-radius: 12px;
+  padding: 0.72rem 1rem;
+}
+
+.irs--shiny .irs-bar,
+.irs--shiny .irs-single {
+  background: var(--dourado) !important;
+  border-color: var(--dourado) !important;
+}
+
+.irs--shiny .irs-handle {
+  border-color: var(--azul-profundo) !important;
+}
+
+.value-box {
+  border-radius: 18px !important;
+  box-shadow: 0 12px 30px rgba(11, 31, 58, 0.10);
+}
+
+.methodology-text {
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.methodology-text blockquote {
+  border-left: 5px solid var(--dourado);
+  padding: 1rem 1.2rem;
+  background: #FAF7EF;
+  color: var(--azul-profundo);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: rgba(214, 168, 79, 0.12) !important;
+}
+
+.selectize-input,
+.form-control {
+  border-radius: 10px;
+  border-color: rgba(11, 31, 58, 0.18);
+}
+
+h4 {
+  color: var(--azul-profundo);
+  font-weight: 800;
+  margin-top: 0.65rem;
+}
